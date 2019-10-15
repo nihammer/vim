@@ -1,0 +1,7 @@
+.netrwhist
+
+pack/my-plugins/start/*
+!pack/my-plugins/start/*.gitkeep
+
+pack/my-plugins/opt/*
+!pack/my-plugins/opt/*.gitkeep
