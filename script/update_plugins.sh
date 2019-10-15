@@ -25,7 +25,7 @@ pull_source_code() {
   if [ -d $AUTOLOAD_PLUGINS_PATH/vtl ]; then
     (cd $AUTOLOAD_PLUGINS_PATH/vtl && git pull)
   else
-    git clone git@github.com:sealemar/vtl.git $AUTOLOAD_PLUGINS_PATH/vtl
+    git clone https://github.com/sealemar/vtl.git $AUTOLOAD_PLUGINS_PATH/vtl
   fi
 
   echo -e '\n\n\n########## DONE! ##########\n'
