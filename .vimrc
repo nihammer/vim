@@ -1,6 +1,9 @@
 syntax on
 filetype plugin indent on
 
+" Set Comment's color
+highlight Comment    ctermfg=33
+
 " Keys map:
 "   Ctrl + key     : <C-key>
 "   Shift + key    : <S-key>
