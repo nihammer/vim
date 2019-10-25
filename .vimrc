@@ -43,7 +43,7 @@ let g:netrw_winsize = 25
 " Auto open netrw
 augroup ProjectDrawer
   autocmd!
-  autocmd VimEnter *.php,*.rb,*.js,*.ts,*.html  :Vexplore
+  autocmd VimEnter *.php,*.rb,*.js,*.ts,*.html,*.graphql  :Vexplore
 augroup END
 
 nnoremap <esc><esc><esc><esc> :noh<CR>
