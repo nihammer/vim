@@ -2,7 +2,10 @@ syntax on
 filetype plugin indent on
 
 " Set Comment's color
-highlight Comment    ctermfg=33
+" https://vim.fandom.com/wiki/Xterm256_color_names_for_console_Vim
+" https://codeyarns.com/2011/07/29/vim-chart-of-color-names
+highlight Comment ctermfg=33
+highlight netrwDir ctermfg=184
 
 " Keys map:
 "   Ctrl + key     : <C-key>
