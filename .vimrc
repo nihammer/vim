@@ -4,8 +4,8 @@ filetype plugin indent on
 " Set Comment's color
 " https://vim.fandom.com/wiki/Xterm256_color_names_for_console_Vim
 " https://codeyarns.com/2011/07/29/vim-chart-of-color-names
-highlight Comment ctermfg=33
-highlight netrwDir ctermfg=184
+highlight Comment ctermfg=33 guifg=#0087ff
+highlight netrwDir ctermfg=184 guifg=#d7d700
 
 " Keys map:
 "   Ctrl + key     : <C-key>
@@ -54,9 +54,11 @@ nnoremap <esc><esc><esc><esc> :noh<CR>
 nnoremap -- I<!--<esc>A--><esc>
 nnoremap --= ^dt<$<left><left>D
 inoremap ><< ><esc>yypa/<esc><up>yyp^C<space><space>
-inoremap ()h ()<left>
-inoremap ""h ""<left>
-inoremap ''h ''<left>
+inoremap ( ()<left>
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap { {}<left>
+inoremap [ []<left>
 nnoremap yo yypC
 nnoremap ; :
 
