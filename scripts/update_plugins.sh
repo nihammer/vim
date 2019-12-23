@@ -11,6 +11,14 @@ pull_source_code() {
   else
     git clone https://github.com/leafgarland/typescript-vim.git $AUTOLOAD_PLUGINS_PATH/typescript-vim
   fi
+
+  # Vim-javascript
+  echo -e '\n\n\n########## Vim-javascript ##########\n'
+  if [ -d $AUTOLOAD_PLUGINS_PATH/vim-javascript ]; then
+    (cd $AUTOLOAD_PLUGINS_PATH/vim-javascript && git pull)
+  else
+    git clone https://github.com/pangloss/vim-javascript.git $AUTOLOAD_PLUGINS_PATH/vim-javascript
+  fi
   
   # Vim-graphql
   echo -e '\n\n\n########## Vim-graphql ##########\n'
@@ -33,7 +41,7 @@ pull_source_code() {
 
 main() {
   # Move to the correct directory
-  cd $(dirname $0)'/..'
+  cd "$(dirname "${BASH_SOURCE[0]}")/.."
 
   pull_source_code
 }
